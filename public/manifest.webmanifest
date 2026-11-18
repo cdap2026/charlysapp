@@ -1,0 +1,26 @@
+{
+  "name": "Punto de Juego · Ciencia en movimiento",
+  "short_name": "Punto de Juego",
+  "description": "Evaluación postural asistida por cámara, registros morfométricos y biométricos, y análisis de técnica en rutinas de ejercicio.",
+  "lang": "es",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f7f9f7",
+  "theme_color": "#168b75",
+  "categories": ["health", "fitness", "sports", "medical"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Evaluación postural", "url": "/?seccion=postura", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Rutinas de ejercicios", "url": "/?seccion=rutinas", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}

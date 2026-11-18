@@ -1,0 +1,10 @@
+export type View = "Frontal" | "Lateral" | "Posterior";
+export type Section = "overview" | "posture" | "biometrics" | "routines" | "athletes" | "history";
+export type PosePoint = { x: number; y: number; z: number; visibility: number };
+export type PoseMetrics = { shoulders: number | null; hips: number | null; knees: number | null; axis: number | null; leftKnee: number | null; rightKnee: number | null; leftElbow: number | null; rightElbow: number | null; confidence: number; score: number | null };
+export type Athlete = { id: string; name: string; age: number; sex: string; sport: string; height: number; weight: number; demo: boolean };
+export type Evaluation = { id: string; athleteId: string; type: "postural" | "rutina"; view: View; demo: boolean; score: number | null; landmarks: PosePoint[]; metrics: PoseMetrics | null; landmarkNotes: Record<string, string>; notes: string; snapshot: string | null; exercise: string | null; repetitions: number; durationSeconds: number; createdAt: string };
+export type Measurement = { id: string; athleteId: string; values: Record<string, number>; notes: string; demo: boolean; createdAt: string };
+export type DashboardData = { athletes: Athlete[]; evaluations: Evaluation[]; measurements: Measurement[] };
+export type PoseFrame = { points: PosePoint[]; metrics: PoseMetrics | null; source: "demo" | "camera" | "upload"; snapshot?: string; width: number; height: number };
+export type ExerciseId = "squat" | "lunge" | "press" | "plank";
